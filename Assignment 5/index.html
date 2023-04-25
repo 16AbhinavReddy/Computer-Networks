@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Forest </title>
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: brown;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="Pictures.html"> Pictures </a></li>
+</ul>
+
+<div style="padding:0 16px;">
+  <h1> Forest </h1>
+  <p> <strong>SeaTrees</strong> directly supports communities and scientists who protect and regenerate blue carbon coastal ecosystems. This includes planting mangrove trees, restoring kelp forests, coral reefs, seagrass meadows, and conserving coastal watersheds.</p>
+  <p> Here is the <a href="https://sea-trees.org/?gclid=Cj0KCQjwuLShBhC_ARIsAFod4fJ43DSRrQaLL1iWPJVJin_lSsEilMNzkb-CseO2WL5WFMlyjRSOW-saAhEhEALw_wcB"> link</a> of our website.</p>
+  <h1> Images for JavaScript </h1>
+</div>
+
+<center> <img id="demo" height = 475 width = 400 src = "photo6.jpeg"> </center><br>
+<center> <button onclick="myFunction()" style= "height : 50px; width : 50pxs">Click me</button> </center>
+<script>
+    var x = "photo6.jpeg";
+    var y = "photo7.jpeg";
+    var z = x;
+function myFunction() {
+    if (z === x) {
+        z = y;
+    } else {
+        z = x;
+    }
+  document.getElementById("demo").src = z;
+}
+</script>
+
+<p> </p>
+</body>
+</html>
+
+

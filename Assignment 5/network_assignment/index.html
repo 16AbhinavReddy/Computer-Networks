@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="index.css"> -->
+        <link rel="icon" type="image/x-icon" href="https://www.pngplay.com/wp-content/uploads/8/Shiba-Inu-Dogecoin-Transparent-Image.png">
+        <title>Network Memes</title>
+        
+    </head>
+    <style>
+        body{
+            background-image:url(back.jpg);
+            background-attachment:fixed;
+            background-position:center;
+            background-size:cover;
+            -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        }
+        #loader{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            
+            
+        }
+        #loadgif{
+            /* margin-left:33%; */
+            margin-top:100px;
+            /* draggable:false; */
+        }
+
+        #frame{
+            width:400px;
+            height:400px;
+            border-radius:20px;
+        }
+
+        #submit{
+            background-color:black;
+            color:white;
+            border-color:black;
+            width:100px;
+            border-radius:20px;
+            transition:0.5s ease-in-out;
+            cursor:pointer;
+            text-decoration:none;
+            height:40px;
+            justify-content: center;
+            align-items:center;
+            display:flex;
+
+        }
+        #submit:hover{
+            background-color:white;
+            color:black;
+            transition:0.5s ease-in-out;
+            box-shadow:0 0px 15px white;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+
+    <body>
+        
+        <div id="maincontainer">
+            <center><h2 style="font-family:cursive;margin-top:30px;color:white;font-size:50px">Random Memes</h2></center>
+            <br>
+            <!-- <br> -->
+            <center><img id="frame" src=""></center>
+            <!-- <br> -->
+            <br>
+            <center><h4 id="submit" onClick="change();">Generate Memes</h4></center>
+            <center><a href="second.html"><h4 id="submit">About</h4></center></a>
+            <center><a id="submit" href="https://www.google.com/search?q=memes+on+computer+networks&sxsrf=APwXEddfwt_aPyxYQ-BEQ4HNx_Lqji2Hvg%3A1680701158580&source=hp&ei=5nYtZMqZIIOHoATfq6z4AQ&iflsig=AOEireoAAAAAZC2E9nqZxJ88x6tOaELkKLBXDwxHpGqI&ved=0ahUKEwjKpJzc65L-AhWDA4gKHd8VCx8Q4dUDCAc&uact=5&oq=memes+on+computer+networks&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKABOgcIIxDqAhAnOgQIIxAnOggIABCKBRCRAjoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOgsIABCKBRCxAxCDAToFCC4QgAQ6CwguEIMBELEDEIAEOhAIABCABBAUEIcCELEDEIMBOggILhCABBCxAzoFCAAQgAQ6CAgAEIAEELEDOgsILhCABBCxAxCDAToICC4QigUQsQM6CggAEIAEEBQQhwI6CggAEIAEEEYQ_wE6CAguEIAEENQCOgYIABAWEB46CAgAEIoFEIYDOgQIIRAVOggIIRAWEB4QHToNCAAQgAQQsQMQgwEQCjoLCC4QgAQQxwEQ0QM6DQgAEIAEEBQQhwIQsQM6DggAEIoFELEDEIMBEJECOggILhCxAxCABDoLCC4QgAQQxwEQrwE6BAgAEAM6BggAEAoQAzoICAAQFhAeEA86BwghEKABEApQ8wJY9k9ghlJoFHAAeACAAZsCiAH_N5IBBjAuNDMuMpgBAKABAbABCg&sclient=gws-wiz"><h4 id="submit">Search in google</h4></center></a>
+
+        </div>
+
+    </body>
+    <script>
+        var index = 3;
+        
+        const listmeme = ["meme1.jpg","meme2.jpg","meme3.jpg","meme4.gif"];
+        document.getElementById("frame").src=listmeme[index];
+        function change(){
+            index+=1;
+            if (index>3){
+                index = 0;
+            }
+            document.getElementById("frame").src=listmeme[index];
+        }
+        
+    </script>
+</html>
+
+
